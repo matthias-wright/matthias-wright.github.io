@@ -1,0 +1,48 @@
+body {
+    font-family: Sans;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.heading1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.heading2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading3 {
+    font-size: 25px;
+}
+
+.font1 {
+    font-size: 15px;
+}
+
+.content {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    padding-bottom: 50px;
+}
+
+hr {
+    left: 0%;
+}
+
+.row {
+    margin-top: 5%;
+}
+
+.logo {
+    text-align: center;
+}

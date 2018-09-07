@@ -5,14 +5,45 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/education.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script>
         $(function(){
             $("#header").load("header.html");
+            $("#footer").load("footer.html");
         });
     </script>
+    <title>Education</title>
 </head>
     <body>
-        <div id="header"></div>
+        <div class="wrappper">
+            <div id="header"></div>
+            <div class="content">
+                <span class="heading1">Education</span>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-1">
+                        <span class="heading2">University of Bath</span><br/>
+                        <span class="heading3">M.Sc., Machine Learning and Autonomous Systems</span>
+                    </div>
+                    <div class="col-sm-3 logo">
+                        <img src="img/bath-logo.png" width="100px" alt="Logo"><br/>
+                        <span>(September 2018 - Present)</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-1">
+                        <span class="heading2">FH Aachen University of Applied Sciences</span><br/>
+                        <span class="heading3">B.Sc., Applied Mathematics And Computer Science</span><br/>
+                        <span class="font1">Thesis: Detecting abnormalities in clinical data with Generative Adversarial Networks</span>
+                    </div>
+                    <div class="col-sm-3 logo">
+                        <img src="img/fh-logo.png" width="100px" alt="Logo"><br/>
+                        <span>(September 2015 - August 2018)</span>
+                    </div>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
     </body>
 </html>
