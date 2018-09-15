@@ -25,16 +25,27 @@
                 <span class="heading3">Bachelor's thesis</span><br/>
                 <a href="files/ba_thesis.pdf" target="_blank">Full version [PDF]</a>&nbsp;
                 <a href="files/ba_thesis_short.pdf" target="_blank">Short version [PDF]</a>&nbsp;
-                <a href="" target="_blank"></a>Code [GitHub]<br/>
+                <a href="https://github.com/matthias-wright/ba_thesis" target="_blank">Code [GitHub]</a><br/>
                 <span class="font1">Detection of medical conditions or abnormalities in clinical
                     data has already been achieved by employing discriminative models, especially
                     neural networks. For example, neural networks have been trained as binary
-                    classifier to learn a decision boundary that discriminates between normal
+                    classifiers to learn a decision boundary that discriminates between normal
                     and abnormal ECG recordings. The training process requires normal as well as
                     abnormal ECG recordings. However, public ECG databases generally consist of
-                    many normal recordings and a few abnormal recordings. This circumstance serves
-                    as the main incentive behind my bachelor's thesis. Train a generative adversarial
-                    network with only normal data.
+                    many normal recordings and a few abnormal recordings. This circumstance served
+                    as the main incentive behind my bachelor's thesis, train a generative adversarial
+                    network with only normal data. I ran two separate experiments. <br/>
+                    At first I tried to detect respiratory failure on the basis of blood gas measurements.
+                    I trained a generative adversarial network with blood gas measurements from healthy patients.
+                    Afterwards, I fed two separate test sets into the trained discriminator. One containing
+                    blood gas measurements of healthy patients and the other containing blood gas measurements of
+                    patients suffering from respiratory failure. The hope was that because the discriminator was
+                    trained only on healthy data, the loss would be larger for the test set containing the
+                    examples of patients with respiratory failure. It did, but the difference was not significant
+                    from a medical point of view. <br/>
+                    I repeated this approach for the other experiment, but I tried to detect cardiac arrhythmia in
+                    ECG recordings instead. This time the difference between the two test sets was significant from
+                    a medical perspective.
                     </span>
             </div>
         </div>
