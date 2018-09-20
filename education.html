@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/education.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/education.js"></script>
     <script>
         $(function(){
             $("#header").load("header.html");
@@ -35,7 +36,46 @@
                     <div class="col-sm-8 offset-sm-1">
                         <span class="heading2">FH Aachen University of Applied Sciences</span><br/>
                         <span class="heading3">B.Sc., Applied Mathematics And Computer Science</span><br/>
-                        <span class="font1">Thesis: Detecting abnormalities in clinical data with Generative Adversarial Networks</span>
+                        <span class="font1">Thesis: Detecting abnormalities in clinical data with Generative Adversarial Networks</span><br/>
+                        <button type=button" class="btn btn-light" data-toggle="modal" data-target="#modal-bachelor">Click here for coursework</button><br/>
+                        <div class="modal fade" id="modal-bachelor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Bachelor's degree coursework</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-group" id="list-bachelor">
+                                            <li class="list-group-item">Introduction to Mathematics</li>
+                                            <li class="list-group-item">Calculus I</li>
+                                            <li class="list-group-item">Calculus II</li>
+                                            <li class="list-group-item">Linear Algebra I</li>
+                                            <li class="list-group-item">Linear Algebra II</li>
+                                            <li class="list-group-item">Probability and Statistics</li>
+                                            <li class="list-group-item">Numerical Mathematics</li>
+                                            <li class="list-group-item">Introduction to Stochastic Processes</li>
+                                            <li class="list-group-item">Java Programming</li>
+                                            <li class="list-group-item">Algorithms and Data Structures</li>
+                                            <li class="list-group-item">Machine Learning</li>
+                                            <li class="list-group-item">Databases</li>
+                                            <li class="list-group-item">Software Engineering</li>
+                                            <li class="list-group-item">Introduction to Information Technology</li>
+                                            <li class="list-group-item">C++ Programming</li>
+                                            <li class="list-group-item">Communication Systems</li>
+                                            <li class="list-group-item">Computer Networks</li>
+                                            <li class="list-group-item">Introduction to Microcontrollers</li>
+                                            <li class="list-group-item">Introduction to Parallel Computing</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-3 logo">
                         <img src="img/fh-logo.png" width="100px" alt="Logo"><br/>
