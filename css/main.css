@@ -58,6 +58,10 @@ hr {
     text-align: center;
 }
 
-.buffer {
+.buffer1 {
     min-height: 5px;
+}
+
+.buffer2 {
+    min-height: 10px;
 }
