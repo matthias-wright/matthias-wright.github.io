@@ -20,6 +20,31 @@
         <hr>
         <div class="row">
             <div class="col-sm-12">
+                <span class="heading2">Neural Style Transfer with Deep Learning (Working Title)</span><br/>
+                <span class="heading3">Master's thesis (May 2019 - Present)</span><br/>
+                <span class="font1">
+                    Similar to the CycleGAN architecture, the main purpose of this model is to define a mapping between two image domains X and Y without
+                    the use of paired training data. A key difference is that the mapping does not directly translate between the two image domains.
+                    Instead, two Autoencoders are incorporated into the model. Their aim is to transform the images from each domain into a low-dimensional representation.
+                    The mapping then occurs between the two low-dimensional spaces of the two domains. Both autoencoders are pretrained and fixed during the training procedure.
+                    The following figure shows the architecture. </br>
+
+                    <div style="text-align: center;"><img src="arch.png" width="400" alt="Architecture"></div>
+
+                    The goal of the transformation network (generator) G<sub>V</sub> is to take a low-dimensional representation v of an image in X and translate
+                    it to a low-dimensional representation u&#x0302;. Putting u&#x0302; through the decoder D<sub>Y</sub> should yield an image y&#x0302; that is
+                    visually indistinguishable from images in Y. The transformation network D<sub>U</sub> has the same goal for the opposite direction. </br>
+                    The discriminator C<sub>Y</sub> aims to distinguish between images from y from Y and generated images y&#x0302;. The discriminator C<sub>X</sub> works analogously. </br>
+                    In addition to this adversarial training formulation, a <i>cycle consistency</i> constraint (Zhu et al., 2017) [1] is imposed on the architecture.
+                    This constraint encourages images that are translated to the opposite domain and then translated back to look approximately like the original image. </br>
+                    All neural networks were implemented as convolutional neural networks. The experiments were implemented in Python together with PyTorch. </br>
+
+                    [1] Zhu J-Y, Park T, Isola P, and Efros AA. 2017.
+                    Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.
+                    IEEE International Conference on Computer Vision (ICCV), pp.2242-2251.
+                    </span>
+            </div>
+            <div class="col-sm-12">
                 <span class="heading2">Detecting Abnormalities in Clinical Data with Generative Adversarial Networks</span><br/>
                 <span class="heading3">Bachelor's thesis (April 2018 - August 2018)</span><br/>
                 <a href="files/ba_thesis.pdf" target="_blank">Full version [PDF]</a>&nbsp;
