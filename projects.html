@@ -28,9 +28,9 @@
                     Instead, two Autoencoders are incorporated into the model. Their aim is to transform the images from each domain into a low-dimensional representation.
                     The mapping then occurs between the two low-dimensional spaces of the two domains. Both autoencoders are pretrained and fixed during the training procedure.
                     The following figure shows the architecture. </br>
-
+                    <div class="buffer"></div>
                     <div style="text-align: center;"><img src="img/architecture.png" width="400" alt="Architecture"></div>
-
+                    <div class="buffer"></div>
                     The goal of the transformation network (generator) G<sub>V</sub> is to take a low-dimensional representation v of an image in X and translate
                     it to a low-dimensional representation u&#x0302;. Putting u&#x0302; through the decoder D<sub>Y</sub> should yield an image y&#x0302; that is
                     visually indistinguishable from images in Y. The transformation network D<sub>U</sub> has the same goal for the opposite direction. </br>
@@ -39,14 +39,15 @@
                     This constraint encourages images that are translated to the opposite domain and then translated back to look approximately like the original image. </br>
                     All neural networks were implemented as convolutional neural networks. The experiments were implemented in Python together with PyTorch. </br>
                     </span>
-                    <div class="buffer1"></div>
-                    <p><span class="font1">
+                <div class="buffer"></div>
+                <p><span class="font1">
                     [1] Zhu J-Y, Park T, Isola P, and Efros AA. 2017.
                     Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.
                     IEEE International Conference on Computer Vision (ICCV), pp.2242-2251.
                     </span></p>
             </div>
-            <div class="buffer2"></div>
+        </div>
+        <div class="row">
             <div class="col-sm-12">
                 <span class="heading2">Detecting Abnormalities in Clinical Data with Generative Adversarial Networks</span><br/>
                 <span class="heading3">Bachelor's thesis (April 2018 - August 2018)</span><br/>
