@@ -57,3 +57,7 @@ hr {
 .logo {
     text-align: center;
 }
+
+.buffer {
+    min-height: 5px;
+}
