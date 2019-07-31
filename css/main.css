@@ -70,8 +70,9 @@ hr {
 
 a {
     color: #151515 !important;
+    margin-right: 15px;
 }
 
-.button {
-    padding-left: 20px;
+.links {
+    margin-top: 20px;
 }
