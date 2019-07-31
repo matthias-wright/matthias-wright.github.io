@@ -68,11 +68,15 @@ hr {
     margin-bottom: 40px;
 }
 
-a {
+.link-text {
     color: #151515 !important;
-    margin-right: 15px;
 }
 
 .links {
     margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-right: 15px;
 }
