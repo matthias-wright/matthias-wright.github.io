@@ -21,29 +21,30 @@
         <div class="row">
             <div class="col-sm-12">
                 <span class="heading2">A Siamese Architecture for Neural Style Transfer</span><br/>
-                <span class="heading3">Master's thesis (May 2019 - Present)</span><br/>
+                <span class="heading3">Master's thesis (May 2019 - September 2019)</span><br/>
+                <a href="files/ma_thesis.pdf" target="_blank">Full version [PDF]</a>&nbsp;
                 <span class="font1">
-                    Similar to the CycleGAN architecture, the main purpose of this model is to define a mapping between two image domains X and Y without
-                    the use of paired training data. A key difference is that the mapping does not directly translate between the two image domains.
-                    Instead, two autoencoders are incorporated into the model. Their aim is to transform the images from each domain into a low-dimensional representation.
-                    The mapping then occurs between the two low-dimensional spaces of the two domains. Both autoencoders are pretrained and fixed during the training procedure.
-                    The following figure shows the architecture. </br>
-
-                    <div class="image"><img src="img/architecture.png" width="400" alt="Architecture"></div>
-
-                    The goal of the transformation network (generator) G<sub>V</sub> is to take a low-dimensional representation v of an image in X and translate
-                    it to a low-dimensional representation u&#x0302;. Putting u&#x0302; through the decoder D<sub>Y</sub> should yield an image y&#x0302; that is
-                    visually indistinguishable from images in Y. The transformation network D<sub>U</sub> has the same goal for the opposite direction. </br>
-                    The discriminator C<sub>Y</sub> aims to distinguish between images from y from Y and generated images y&#x0302;. The discriminator C<sub>X</sub> works analogously. </br>
-                    In addition to this adversarial training formulation, a <i>cycle consistency</i> constraint (Zhu et al., 2017) [1] is imposed on the architecture.
-                    This constraint encourages images that are translated to the opposite domain and then translated back to look approximately like the original image. </br>
-                    All neural networks were implemented as convolutional neural networks. The experiments were implemented in Python together with PyTorch. </br>
-                    </span>
+                    In this thesis, we introduced a dual autoencoder architecture that aimed to perform image style transfer without
+                    explicitly using RGB-pixel representations. Similar to the CycleGAN architecture (Zhu et al. 2017), the goal was to
+                    learn a mapping between two image domains. The purpose of the autoencoders was to learn the most important features
+                    of the image domains, thus removing non-essential information. The hypothesis was that the low-dimensional representations,
+                    learned through the autoencoders, would model images on a level that is semantically higher than pixel representations.
+                    The mapping between the low-dimensional representations was performed by two deep neural networks (generators), one for each direction.
+                    Both networks were paired up with a discriminator to form a Generative Adversarial Network (GAN). We tried both fully-connected neural networks
+                    (FCNNs) and convolutional neural networks (CNNs) for the generators. While using FCNNs did not yield visually recognizable style transfer results,
+                    we were able to achieve some form of style transfer using CNNs. However, the stylized images were not visually indistinguishable from the images in the corresponding domain.
+                    The results were evaluated quantitatively using the Fr\'echet Inception Distance (Heusel et al. 2017).
+                    We concluded that the GANs were likely unable to capture the distribution of the low-dimensional representation of the corresponding domain.
+                </span>
                 <div class="buffer"></div>
                 <p><span class="font1">
                     [1] Zhu J-Y, Park T, Isola P, and Efros AA. 2017.
                     Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.
                     IEEE International Conference on Computer Vision (ICCV), pp.2242-2251.
+
+                    [2] Heusel M, Ramsauer H, Unterthiner T, Nessler B, and Hochreiter S. 2017.
+                    GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium.
+                    Advances in Neural Information Processing Systems 30.
                     </span></p>
             </div>
         </div>
