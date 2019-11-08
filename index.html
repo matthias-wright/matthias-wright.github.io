@@ -8,41 +8,105 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script>
-        $(function(){
-            $("#header").load("header.html");
-        });
-    </script>
     <title>Matthias Wright</title>
 </head>
     <body>
         <div class="wrapper">
-            <div id="header"></div>
+            <div id="header">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="nav-items">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse font2" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="education.html">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="experience.html">Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="projects.html">Thesis Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="files/cv.pdf">CV</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
             <div class="content">
-                <span class="heading1">About Me</span>
-                <hr>
                 <div class="row">
+                    <div class="col-sm-3">
+                        <img src="img/portrait.jpg" width="250px" alt="Me"><br/>
+                        <div class="name">
+                            <span class="heading1">Matthias Wright</span></br>
+                        </div>
+                        <div class="links">
+                            <div class="button"><a href="mailto:matthias.wright@yahoo.de" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: mail; ratio: 2"></span><span class="link-text"></span></a></div>
+                            <div class="button"><a href="https://github.com/matthias-wright" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: github; ratio: 2"></span><span class="link-text"></span></a></div>
+                            <div class="button"><a href="https://www.linkedin.com/in/matthias-wright/" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: linkedin; ratio: 2"></span><span class="link-text"></span></a></div>
+                            <div class="button"><a href="https://twitter.com/MatthiasSWright" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: twitter; ratio: 2"></span><span class="link-text"></span></a></div>
+                        </div>
+                    </div>
                     <div class="col-sm-8">
-                        <span class="font1">
+                        <span class="heading4">About Me</span></br></br>
+                        <span class="font2">
                             I have just finished my MSc in Machine Learning and Autonomous Systems at the University of Bath and am currently awaiting the final results. <br/>
                             Prior to my studies at Bath, I completed a degree apprenticeship program called MATSE offered jointly by RWTH Aachen University,
                             Aachen University of Applied Sciences, and the Chamber of Commerce and Industry, Aachen.
                             As part of this program, I completed a bachelor's degree program in Applied Mathematics and Computer Science
                             at Aachen University of Applied Sciences and a CCI-certified vocational training program in Software Development at RWTH Aachen University while working
                             as a junior software developer at the Department of Medical Informatics at RWTH Aachen University (<a href="http://www.rwth-aachen.de/cms/root/Die-RWTH/Arbeiten-an-der-RWTH/Berufsausbildung/Ausbildungsberufe/~vsa/Math-techn-Softwareentwickler/?lidx=1" target="_blank">more information</a>).<br/>
-                            If you have any questions, feel free to contact me.
-                        </span>
-                        <div class="links">
-                            <div class="button"><a href="mailto:matthias.wright@yahoo.de" target="_blank"><span class="uk-icon link-text" uk-icon="icon: mail"></span><span class="link-text"> Mail</span></a></div>
-                            <div class="button"><a href="https://github.com/matthias-wright" target="_blank"><span class="uk-icon link-text" uk-icon="icon: github"></span><span class="link-text"> GitHub</span></a></div>
-                            <div class="button"><a href="https://www.linkedin.com/in/matthias-wright/" target="_blank"><span class="uk-icon link-text" uk-icon="icon: linkedin"></span><span class="link-text"> LinkedIn</span></a></div>
-                            <div class="button"><a href="https://twitter.com/MatthiasSWright" target="_blank"><span class="uk-icon link-text" uk-icon="icon: twitter"></span><span class="link-text"> Twitter</span></a></div>
+                            If you have any questions, feel free to contact me. </br>
+                        </span></br>
+                        <div class="button"><a href="https://matthias-wright.github.io/files/cv.pdf" target="_blank"><span class="uk-icon link-text" uk-icon="icon: file-pdf; ratio: 1"></span><span class="link-text">Curriculum Vitae [PDF]</span></a></div>
+                        <div class="buffer-top-1"><span class="heading4">Education</span></div>
+                        <div class="row font1">
+                            <div class="col-sm-4">
+                                Oct 2018 - Sep 2019
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="bold">University of Bath, United Kingdom</span><br/>
+                                M.Sc. in Machine Learning and Autonomous Systems <br/>
+                                Department of Computer Science <br/>
+                                Thesis: A Siamese Architecture for Neural Style Transfer
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="img/portrait.jpg" width="200px" alt="Me"><br/>
+                        <div class="row buffer-top-0 font1">
+                            <div class="col-sm-4">
+                                Sep 2015 - Aug 2018
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="bold">Aachen University of Applied Sciences, Germany</span><br/>
+                                B.Sc. in Applied Mathematics and Computer Science <br/>
+                                Thesis: Detecting Abnormalities in Clinical Data with GANs
+                            </div>
+                        </div>
+                        <div class="row buffer-top-0 font1">
+                            <div class="col-sm-4">
+                                Sep 2015 - Aug 2018
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="bold">Aachen Chamber of Industry and Commerce, Germany</span><br/>
+                                Apprenticeship as a Mathematical-Technical Software Developer<br/>
+                            </div>
+                        </div>
+                        <div class="buffer-top-1"><span class="heading4">Experience</span></div>
+                        <div class="row font1">
+                            <div class="col-sm-4">
+                                Sep 2015 - Aug 2018
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="bold">RWTH Aachen University, Germany</span><br/>
+                                Software Developer <br/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
