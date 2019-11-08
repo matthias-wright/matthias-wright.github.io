@@ -40,6 +40,10 @@ body {
     font-size: 35px;
 }
 
+.heading5 {
+    font-size: 25px;
+}
+
 .font1 {
     font-size: 15px;
 }
@@ -97,17 +101,21 @@ hr {
 
 .name {
     margin-top: 20px;
-    margin-left: 7%;
+
 }
 
 .links {
-    margin-left: 7%;
+
     margin-top: 25px;
+}
+
+.align-center {
+    text-align: center;
 }
 
 .button {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 img {
