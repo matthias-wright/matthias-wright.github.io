@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3a0e05-f1c3-42d2-b061-bc6496a3a61a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/cv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/files/cv.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +15,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RZQCZLguzmBYWSNEQH9gGLfoZX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -24,15 +29,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -61,6 +66,9 @@
       <workItem from="1573226491617" duration="10048000" />
       <workItem from="1573291135391" duration="204000" />
       <workItem from="1574512763858" duration="219000" />
+      <workItem from="1575402932446" duration="203000" />
+      <workItem from="1575403193218" duration="19000" />
+      <workItem from="1576696194885" duration="1362000" />
     </task>
     <servers />
   </component>
@@ -79,5 +87,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="407" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1576696509232">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="407" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1035@0.0.1920.1035" timestamp="1575403192914" />
+    <state x="407" y="345" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1035@0.0.1920.1035" timestamp="1576696509232" />
   </component>
 </project>
