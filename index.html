@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Matthias Wright</title>
 </head>
     <body>
         <div class="wrapper">
-            <div id="header">
+            <!--<div id="header">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="nav-items">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,34 +31,45 @@
                         </div>
                     </div>
                 </nav>
-            </div>
+            </div>-->
             <div class="content">
                 <div class="row">
-                    <div class="col-sm-3 align-center">
-                        <img src="img/portrait.jpg" width="250px" alt="Me"><br/>
-                        <div class="name">
-                            <span class="heading5">Matthias Wright</span></br>
-                        </div>
-                        <div class="links">
-                            <div class="button"><a href="mailto:matthias.wright@iwr.uni-heidelberg.de" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: mail; ratio: 2"></span><span class="link-text"></span></a></div>
-                            <div class="button"><a href="https://github.com/matthias-wright" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: github; ratio: 2"></span><span class="link-text"></span></a></div>
-                            <div class="button"><a href="https://www.linkedin.com/in/matthias-wright/" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: linkedin; ratio: 2"></span><span class="link-text"></span></a></div>
-                            <div class="button"><a href="https://twitter.com/MatthiasSWright" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: twitter; ratio: 2"></span><span class="link-text"></span></a></div>
+                    <div id="socials" class="col-sm-3 align-center">
+                        <div class="sticky-top">
+                            <img id="profile-img" src="img/portrait.jpg" width="250px" alt="Me"><br/>
+                            <div class="name">
+                                <span class="heading5">Matthias Wright</span></br>
+                            </div>
+                            <div class="links">
+                                <div class="button"><a href="mailto:matthias.wright@iwr.uni-heidelberg.de" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: mail; ratio: 2"></span><span class="link-text"></span></a></div>
+                                <div class="button"><a href="https://github.com/matthias-wright" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: github; ratio: 2"></span><span class="link-text"></span></a></div>
+                                <div class="button"><a href="https://www.linkedin.com/in/matthias-wright/" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: linkedin; ratio: 2"></span><span class="link-text"></span></a></div>
+                                <div class="button"><a href="https://twitter.com/mdotwright" target="_blank"><span class="uk-icon uk-hover link-text" uk-icon="icon: twitter; ratio: 2"></span><span class="link-text"></span></a></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-8">
                         <span class="heading4">About Me</span></br></br>
                         <span class="font2">
-                            I am a PhD student in the Computer Vision Group at Heidelberg University. <br/>
-                            Previously, I completed my MSc in Machine Learning and Autonomous Systems at the University of Bath.
-                            Prior to my studies at Bath, I completed a degree apprenticeship program called MATSE offered jointly by RWTH Aachen University,
-                            Aachen University of Applied Sciences, and the Chamber of Commerce and Industry, Aachen.
-                            As part of this program, I completed a bachelor's degree program in Applied Mathematics and Computer Science
-                            at Aachen University of Applied Sciences and a CCI-certified vocational training program in Software Development at RWTH Aachen University while working
-                            as a junior software developer at the Department of Medical Informatics at RWTH Aachen University (<a href="http://www.rwth-aachen.de/cms/root/Die-RWTH/Arbeiten-an-der-RWTH/Berufsausbildung/Ausbildungsberufe/~vsa/Math-techn-Softwareentwickler/?lidx=1" target="_blank">more information</a>).<br/>
-                            If you have any questions, feel free to contact me. </br>
+                            I am a PhD student in the Computer Vision Group at Heidelberg University.<br/>
+                            I am work on generative deep learning, specifically image synthesis and neural style transfer.</br>
                         </span></br>
                         <div class="button"><a href="https://matthias-wright.github.io/files/cv.pdf" target="_blank"><span class="uk-icon link-text" uk-icon="icon: file-pdf; ratio: 1"></span><span class="link-text">Curriculum Vitae [PDF]</span></a></div>
+                        <div class="buffer-top-1"><span class="heading4">Publications</span></div>
+                        * denotes equal contribution
+                        <div class="row buffer-top-0 font1">
+
+                            <div class="col-sm-4">
+                                <img src="img/brushstroke_st_diagram.png" width="250px" alt="Me"><br/>
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="bold">Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes</span></br>
+                                <span>Dmytro Kotovenko, Matthias Wright*, Arthur Heimbrecht, Björn Ommer</span></br>
+                                <span>CVPR 2021</span></br>
+                                <span>[<a href="https://arxiv.org/abs/2103.17185">Paper</a>][Project Page][<a href="https://github.com/CompVis/brushstroke-parameterized-style-transfer">GitHub</a>]</span>
+                            </div>
+                        </div>
+
                         <div class="buffer-top-1"><span class="heading4">Education</span></div>
                         <div class="row buffer-top-0 font1">
                             <div class="col-sm-4">
@@ -66,7 +77,7 @@
                             </div>
                             <div class="col-sm-8">
                                 <span class="bold">Heidelberg University, Germany</span><br/>
-                                Ph.D. in Computer Science (Computer Vision / Deep Learning) <br/>
+                                Ph.D. Student in Computer Science (Computer Vision / Deep Learning) <br/>
                                 Computer Vision Group, Heidelberg Collaboratory for Image Processing <br/>
                                 Advisor: Prof. Björn Ommer
                             </div>
@@ -92,15 +103,7 @@
                                 Thesis: Detecting Abnormalities in Clinical Data with GANs
                             </div>
                         </div>
-                        <div class="row buffer-top-0 font1">
-                            <div class="col-sm-4">
-                                Sep 2015 - Aug 2018
-                            </div>
-                            <div class="col-sm-8">
-                                <span class="bold">Aachen Chamber of Industry and Commerce, Germany</span><br/>
-                                Apprenticeship as a Mathematical-Technical Software Developer<br/>
-                            </div>
-                        </div>
+
                         <div class="buffer-top-1"><span class="heading4">Experience</span></div>
                         <div class="row buffer-top-0 font1">
                             <div class="col-sm-4">
@@ -116,7 +119,7 @@
             </div>
         </div>
         <footer class="footer">
-            <span id="footer-text">&copy; Matthias Wright, 2019</span>
+            <!--<span id="footer-text">&copy; Matthias Wright, 2021</span>-->
         </footer>
     </body>
 </html>
