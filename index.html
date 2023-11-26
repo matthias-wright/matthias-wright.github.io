@@ -1,98 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="css/uikit.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
     <title>Matthias Wright</title>
-</head>
-    <body>
-        <div class="wrapper">
-            <!--<div id="header">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="nav-items">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse font2" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="projects.html">Thesis Projects</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>-->
-            <div class="content">
-                <div class="row">
-                    <div id="socials" class="col-sm-3 align-center">
-                        <div class="sticky-top">
-                            <img id="profile-img" src="img/portrait.jpg" width="250px" alt="Me"><br/>
-                            <div class="name">
-                                <span class="heading5">Matthias Wright</span></br>
-                            </div>
-                            <div class="links">
-                                <div class="button"><a href="mailto:m.wright@campus.lmu.de" target="_blank"><span class="uk-icon uk-hover link-text far fa-envelope fa-2x"></span></a></div>
-                                <div class="button"><a href="https://github.com/matthias-wright" target="_blank"><span class="uk-icon uk-hover link-text fab fa-github fa-2x"></span></a></div>
-                                <div class="button"><a href="https://www.linkedin.com/in/matthias-wright/" target="_blank"><span class="uk-icon uk-hover link-text fab fa-linkedin-in fa-2x"></span></a></div>
-                                <div class="button"><a href="https://twitter.com/mdotwright" target="_blank"><span class="uk-icon uk-hover link-text fab fa-twitter fa-2x"></span></a></div>
-                                <div class="button" id="scholar"><a href="https://scholar.google.de/citations?hl=en&user=s52g2LEAAAAJ" target="_blank"><span class="uk-hover link-text ai ai-google-scholar ai-2x"></span></a></div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <span class="heading4">About Me</span></br></br>
-                        <span class="font2">
-                            I am a PhD Student in Computer Science at Ludwig Maximilian University of Munich.<br/>
-                            I work on generative deep learning, specifically image synthesis and neural style transfer.</br>
-                        </span></br>
-                        <div class="button"><a href="https://matthias-wright.github.io/files/cv.pdf" target="_blank"><span class="uk-icon link-text" uk-icon="icon: file-pdf; ratio: 1"></span><span class="link-text">Curriculum Vitae [PDF]</span></a></div>
-                        <div class="button"><a href="https://matthias-wright.github.io/files/matthias-wright.gpg" target="_blank"><span class="uk-icon link-text" uk-icon="icon: lock; ratio: 1"></span><span class="link-text">GPG Public Key</span></a></div>
-                        <div class="buffer-top-1"><span class="heading4">Publications</span></div>
-                        * denotes equal contribution
-                        <div class="row buffer-top-0 font1">
-
-                            <div class="col-sm-4">
-                                <img src="img/art_fid.png" width="250px" alt=""><br/>
-                            </div>
-                            <div class="col-sm-8">
-                                <span class="bold">ArtFID: Quantitative Evaluation of Neural Style Transfer</span></br>
-                                <span><u>Matthias Wright</u>, Björn Ommer</span></br>
-                                <span>GCPR 2022 (Best Paper Honorable Mention)</span></br>
-                                <span>[<a href="https://arxiv.org/abs/2207.12280">Paper</a>][<a href="https://github.com/matthias-wright/art-fid">Code</a>]</span>
-                            </div>
-
-                            <div class="col-sm-4 buffer-top-1">
-                                <img src="img/brushstroke_st_diagram.png" width="250px" alt=""><br/>
-                            </div>
-                            <div class="col-sm-8 buffer-top-1">
-                                <span class="bold">Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes</span></br>
-                                <span>Dmytro Kotovenko*, <u>Matthias Wright*</u>, Arthur Heimbrecht, Björn Ommer</span></br>
-                                <span>CVPR 2021</span></br>
-                                <span>[<a href="https://arxiv.org/abs/2103.17185">Paper</a>][<a href="https://compvis.github.io/brushstroke-parameterized-style-transfer/">Project Page</a>][<a href="https://github.com/CompVis/brushstroke-parameterized-style-transfer">Code</a>]</span>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li class="name">
+          <div class="name">> matthias wright</div>
+        </li>
+        <input type="checkbox" id="check" />
+        <div class="navbar-links">
+          <li><a class="link" href="#about">about</a></li>
+          <li><a class="link" href="#contact">contact</a></li>
+          <li><a class="link" href="#blog-posts">blog posts</a></li>
+          <li><a class="link" href="#publications">publications</a></li>
+          <li class="dark-node-wrapper">
+            <a href="#" class="dark-mode-toggle">
+              <svg
+                width="28px"
+                height="28px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 496"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                  transform="translate(-8 -8)"
+                />
+              </svg>
+            </a>
+          </li>
+          <label for="check" class="close-menu">
+            <svg
+              fill="#000000"
+              width="32px"
+              height="32px"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M 7.21875 5.78125 L 5.78125 7.21875 L 14.5625 16 L 5.78125 24.78125 L 7.21875 26.21875 L 16 17.4375 L 24.78125 26.21875 L 26.21875 24.78125 L 17.4375 16 L 26.21875 7.21875 L 24.78125 5.78125 L 16 14.5625 Z"
+              /></svg
+          ></label>
         </div>
-        <footer class="footer">
-            <!--<span id="footer-text">&copy; Matthias Wright, 2021</span>-->
-        </footer>
-    </body>
+        <label for="check" class="open-menu"
+          ><svg
+            width="32px"
+            height="32px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.5 8.25H4.5V6.75H19.5V8.25Z"
+              fill="currentColor"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.5 12.75H4.5V11.25H19.5V12.75Z"
+              fill="currentColor"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.5 17.25H4.5V15.75H19.5V17.25Z"
+              fill="currentColor"
+            /></svg
+        ></label>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="section" id="about">
+        <div class="header">/about</div>
+        <div class="paragraph">
+          I like to write code. I also like math. I work as a software engineer on distributed and decentralized systems.
+          Prior to that I worked in academia, doing research in machine learning and computer vision.
+        </div>
+      </div>
+
+      <div class="section" id="contact">
+        <div class="header">/contact</div>
+        <div class="paragraph">
+          <ul>
+            <li>
+              Email: matthias(at)wright(dot)chat
+            </li>
+            <li>
+              Github:
+              <a href="https://github.com/matthias-wright" target="_blank"
+                >matthias-wright</a
+              >
+            </li>
+            <li>
+              Nostr PubKey:
+              npub13hl3jwekn6s68t9l0pehnryr7f3fm67xf7ku62sc898s59th9agq8xqu8s
+            </li>
+            <li>
+              Twitter:
+              <a href="https://twitter.com/mdotwright" target="_blank"
+                >@mdotwright</a
+              >
+            </li>
+            <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/matthias-wright/" target="_blank"
+                >matthias-wright</a
+              >
+            </li>
+            <li>
+              GPG PubKey:
+              <a
+                href="https://matthias-wright.github.io/files/matthias-wright.gpg"
+                target="_blank"
+                >matthias-wright.gpg [656 bytes]</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://scholar.google.de/citations?hl=en&user=s52g2LEAAAAJ"
+                target="_blank"
+                >Google Scholar</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section" id="blog-posts">
+        <div class="header">/blog posts</div>
+        <div class="paragraph">
+          <div class="blog-post">
+              <a href="https://blog.fleek.network/post/latency-optimized-topology/" target="_blank">Latency-Optimized Topology</a>
+          </div>
+          <div class="blog-post">
+              <a href="https://blog.fleek.network/post/bloom-and-cuckoo-filters-for-cache-summarization/" target="_blank">Bloom Filters and Cuckoo Filters for Cache Summarization</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="publications">
+        <div class="header">/publications</div>
+        <div class="paragraph">
+          <span>* denotes equal contribution</span>
+          <br />
+          <br />
+          <div>
+              <span class="bold">ArtFID: Quantitative Evaluation of Neural Style Transfer</span></br>
+              <span><u>Matthias Wright</u>, Björn Ommer</span></br>
+              <span>GCPR 2022 (Best Paper Honorable Mention)</span></br>
+              <span>[<a href="https://arxiv.org/abs/2207.12280">Paper</a>][<a href="https://github.com/matthias-wright/art-fid">Code</a>]</span>
+          </div>
+          <br />
+          <div>
+              <span class="bold">Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes</span></br>
+              <span>Dmytro Kotovenko*, <u>Matthias Wright*</u>, Arthur Heimbrecht, Björn Ommer</span></br>
+              <span>CVPR 2021</span></br>
+              <span>[<a href="https://arxiv.org/abs/2103.17185">Paper</a>][<a href="https://compvis.github.io/brushstroke-parameterized-style-transfer/">Project Page</a>][<a href="https://github.com/CompVis/brushstroke-parameterized-style-transfer">Code</a>]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
