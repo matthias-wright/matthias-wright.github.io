@@ -101,7 +101,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 611px) {
+@media (min-width: 801px) {
   body {
     width: 65%;
     margin: 0 auto;
@@ -149,7 +149,7 @@ body {
   display: none;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 800px) {
   body {
     margin-left: 5px;
     margin-right: 5px;
