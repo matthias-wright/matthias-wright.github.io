@@ -1,172 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Matthias Wright</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <ul class="navbar">
-        <li class="name">
-          <div class="name">> matthias wright</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Matthias Wright</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <ul class="navbar">
+      <li class="name">
+        <div class="name">> matthias wright</div>
+      </li>
+      <input type="checkbox" id="check" />
+      <div class="navbar-links">
+        <li><a class="link" href="#about">about</a></li>
+        <li><a class="link" href="#contact">contact</a></li>
+        <li><a class="link" href="#blog-posts">blog posts</a></li>
+        <li><a class="link" href="#publications">publications</a></li>
+        <li class="dark-node-wrapper">
+          <a href="#" class="dark-mode-toggle">
+            <svg width="28px" height="28px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+              <path fill="currentColor"
+                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                transform="translate(-8 -8)" />
+            </svg>
+          </a>
         </li>
-        <input type="checkbox" id="check" />
-        <div class="navbar-links">
-          <li><a class="link" href="#about">about</a></li>
-          <li><a class="link" href="#contact">contact</a></li>
-          <li><a class="link" href="#blog-posts">blog posts</a></li>
-          <li><a class="link" href="#publications">publications</a></li>
-          <li class="dark-node-wrapper">
-            <a href="#" class="dark-mode-toggle">
-              <svg
-                width="28px"
-                height="28px"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 496 496"
-              >
-                <path
-                  fill="currentColor"
-                  d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-                  transform="translate(-8 -8)"
-                />
-              </svg>
-            </a>
+        <label for="check" class="close-menu">
+          <svg fill="#000000" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor"
+              d="M 7.21875 5.78125 L 5.78125 7.21875 L 14.5625 16 L 5.78125 24.78125 L 7.21875 26.21875 L 16 17.4375 L 24.78125 26.21875 L 26.21875 24.78125 L 17.4375 16 L 26.21875 7.21875 L 24.78125 5.78125 L 16 14.5625 Z" />
+          </svg></label>
+      </div>
+      <label for="check" class="open-menu"><svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 8.25H4.5V6.75H19.5V8.25Z" fill="currentColor" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 12.75H4.5V11.25H19.5V12.75Z" fill="currentColor" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 17.25H4.5V15.75H19.5V17.25Z" fill="currentColor" />
+        </svg></label>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="section" id="about">
+      <div class="header">/about</div>
+      <div class="paragraph">
+        I like to write code. I also like math. I work as a software engineer on distributed and decentralized systems.
+        Prior to that I worked in academia, doing research in machine learning and computer vision.
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="header">/contact</div>
+      <div class="paragraph">
+        <ul>
+          <li>
+            Email: matthias(at)wright(dot)chat
           </li>
-          <label for="check" class="close-menu">
-            <svg
-              fill="#000000"
-              width="32px"
-              height="32px"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="currentColor"
-                d="M 7.21875 5.78125 L 5.78125 7.21875 L 14.5625 16 L 5.78125 24.78125 L 7.21875 26.21875 L 16 17.4375 L 24.78125 26.21875 L 26.21875 24.78125 L 17.4375 16 L 26.21875 7.21875 L 24.78125 5.78125 L 16 14.5625 Z"
-              /></svg
-          ></label>
-        </div>
-        <label for="check" class="open-menu"
-          ><svg
-            width="32px"
-            height="32px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M19.5 8.25H4.5V6.75H19.5V8.25Z"
-              fill="currentColor"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M19.5 12.75H4.5V11.25H19.5V12.75Z"
-              fill="currentColor"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M19.5 17.25H4.5V15.75H19.5V17.25Z"
-              fill="currentColor"
-            /></svg
-        ></label>
-      </ul>
-    </nav>
-    <div class="content">
-      <div class="section" id="about">
-        <div class="header">/about</div>
-        <div class="paragraph">
-          I like to write code. I also like math. I work as a software engineer on distributed and decentralized systems.
-          Prior to that I worked in academia, doing research in machine learning and computer vision.
-        </div>
+          <li>
+            Github:
+            <a href="https://github.com/matthias-wright" target="_blank">matthias-wright</a>
+          </li>
+          <li>
+            Nostr PubKey:
+            npub13hl3jwekn6s68t9l0pehnryr7f3fm67xf7ku62sc898s59th9agq8xqu8s
+          </li>
+          <li>
+            Twitter:
+            <a href="https://twitter.com/mdotwright" target="_blank">@mdotwright</a>
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/matthias-wright/" target="_blank">matthias-wright</a>
+          </li>
+          <li>
+            GPG PubKey:
+            <a href="https://matthias-wright.github.io/files/matthias-wright.gpg" target="_blank">matthias-wright.gpg
+              [656 bytes]</a>
+          </li>
+          <li>
+            <a href="https://scholar.google.de/citations?hl=en&user=s52g2LEAAAAJ" target="_blank">Google Scholar</a>
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <div class="section" id="contact">
-        <div class="header">/contact</div>
-        <div class="paragraph">
-          <ul>
-            <li>
-              Email: matthias(at)wright(dot)chat
-            </li>
-            <li>
-              Github:
-              <a href="https://github.com/matthias-wright" target="_blank"
-                >matthias-wright</a
-              >
-            </li>
-            <li>
-              Nostr PubKey:
-              npub13hl3jwekn6s68t9l0pehnryr7f3fm67xf7ku62sc898s59th9agq8xqu8s
-            </li>
-            <li>
-              Twitter:
-              <a href="https://twitter.com/mdotwright" target="_blank"
-                >@mdotwright</a
-              >
-            </li>
-            <li>
-              LinkedIn:
-              <a href="https://www.linkedin.com/in/matthias-wright/" target="_blank"
-                >matthias-wright</a
-              >
-            </li>
-            <li>
-              GPG PubKey:
-              <a
-                href="https://matthias-wright.github.io/files/matthias-wright.gpg"
-                target="_blank"
-                >matthias-wright.gpg [656 bytes]</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://scholar.google.de/citations?hl=en&user=s52g2LEAAAAJ"
-                target="_blank"
-                >Google Scholar</a
-              >
-            </li>
-          </ul>
+    <div class="section" id="blog-posts">
+      <div class="header">/blog posts</div>
+      <div class="paragraph">
+        <div class="blog-post">
+          <a href="https://blog.fleek.network/post/fleek-network-consensus-narwhal-bullshark/" target="_blank">-
+            Leveraging Narwhal & Bullshark For Consensus To Meet The High Demands Of An Edge Network</a>
         </div>
-      </div>
-
-      <div class="section" id="blog-posts">
-        <div class="header">/blog posts</div>
-        <div class="paragraph">
-          <div class="blog-post">
-              <a href="https://blog.fleek.network/post/latency-optimized-topology/" target="_blank">Latency-Optimized Topology</a>
-          </div>
-          <div class="blog-post">
-              <a href="https://blog.fleek.network/post/bloom-and-cuckoo-filters-for-cache-summarization/" target="_blank">Bloom Filters and Cuckoo Filters for Cache Summarization</a>
-          </div>
+        <div class="blog-post">
+          <a href="https://blog.fleek.network/post/latency-optimized-topology/" target="_blank">- Latency-Optimized
+            Topology</a>
         </div>
-      </div>
-
-      <div class="section" id="publications">
-        <div class="header">/publications</div>
-        <div class="paragraph">
-          <span>* denotes equal contribution</span>
-          <br />
-          <br />
-          <div>
-              <span class="bold">ArtFID: Quantitative Evaluation of Neural Style Transfer</span></br>
-              <span><u>Matthias Wright</u>, Björn Ommer</span></br>
-              <span>GCPR 2022 (Best Paper Honorable Mention)</span></br>
-              <span>[<a href="https://arxiv.org/abs/2207.12280">Paper</a>][<a href="https://github.com/matthias-wright/art-fid">Code</a>]</span>
-          </div>
-          <br />
-          <div>
-              <span class="bold">Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes</span></br>
-              <span>Dmytro Kotovenko*, <u>Matthias Wright*</u>, Arthur Heimbrecht, Björn Ommer</span></br>
-              <span>CVPR 2021</span></br>
-              <span>[<a href="https://arxiv.org/abs/2103.17185">Paper</a>][<a href="https://compvis.github.io/brushstroke-parameterized-style-transfer/">Project Page</a>][<a href="https://github.com/CompVis/brushstroke-parameterized-style-transfer">Code</a>]</span>
-          </div>
+        <div class="blog-post">
+          <a href="https://blog.fleek.network/post/bloom-and-cuckoo-filters-for-cache-summarization/" target="_blank">-
+            Bloom Filters and Cuckoo Filters for Cache Summarization</a>
         </div>
       </div>
     </div>
-  </body>
+
+    <div class="section" id="publications">
+      <div class="header">/publications</div>
+      <div class="paragraph">
+        <span>* denotes equal contribution</span>
+        <br />
+        <br />
+        <div>
+          <span class="bold">ArtFID: Quantitative Evaluation of Neural Style Transfer</span></br>
+          <span><u>Matthias Wright</u>, Björn Ommer</span></br>
+          <span>GCPR 2022 (Best Paper Honorable Mention)</span></br>
+          <span>[<a href="https://arxiv.org/abs/2207.12280">Paper</a>][<a
+              href="https://github.com/matthias-wright/art-fid">Code</a>]</span>
+        </div>
+        <br />
+        <div>
+          <span class="bold">Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes</span></br>
+          <span>Dmytro Kotovenko*, <u>Matthias Wright*</u>, Arthur Heimbrecht, Björn Ommer</span></br>
+          <span>CVPR 2021</span></br>
+          <span>[<a href="https://arxiv.org/abs/2103.17185">Paper</a>][<a
+              href="https://compvis.github.io/brushstroke-parameterized-style-transfer/">Project Page</a>][<a
+              href="https://github.com/CompVis/brushstroke-parameterized-style-transfer">Code</a>]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
